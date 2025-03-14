@@ -15,8 +15,8 @@ class SessionsController < ApplicationController
         flash["notice"] = "Welcome!"
         redirect_to "/"
       else
-        flash["notice"] = "Email / password combination incorrect."
         redirect_to "/login"
+        flash["notice"] = "Email / password combination incorrect."
       end
 
     end
